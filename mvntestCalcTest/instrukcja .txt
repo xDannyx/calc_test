@@ -1,0 +1,11 @@
+1. Œci¹gn¹æ mavena:
+https://maven.apache.org/download.cgi
+2. sprawdzamy w cmd: mvn - -version, powinno wskazywaæ domyœlnie na jdk a nie na jre
+2.a) jeœli domyœlnie to jre to: 
+- JAVA_HOME - czyli ustawiæ domyœln¹ œcie¿kê do jdk: win+r -> sysdm.cpl -> Zaawansowane -> Zmienne œrodowiskowe -> a ¿e nie wiem, która œcie¿ka zadzia³a³a to da³em na pa³ê: dla u¿ytkownika %JAVA_HOME% // œcie¿ka do *\Java\jdk* i JAVA_HOME // œcie¿ka do *\Java\jdk*
+oraz dla zmiennych systemowych to samo co wy¿ej + doda³em java.home
+dodatkowo - dla zmiennych systemowych w Path edytowaæ i dodaæ zarówno œcie¿kê do JDK oraz (jeœli nie ma) œcie¿kê do mavena, przyk³adowo C:\maven\apache-maven-3.5.4\bin
+- w Eclipsie ustawiæ JDK a nie JRE, wywaliæ jre : window -> preferences -> java -> installed jre's (zostawiæ samo jdk) -> Execution Environments java se-1.6 na jdk (ja tak czy siak zaznaczy³em wszystko na jdk, wsio
+2. b) jeœli domyœlne to jdk to 
+- edytowaæ skrypt CalcTest.ps1 -> cd do folderu z projektem: * \git\calc_test\Calc-Test
+- powershell jako admin, cd do skryptu i odpaliæ .\CalcTest.ps1
